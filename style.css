@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    max-width: 144px;
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    padding: 0 50px;
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+ }
+ 
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 40px;
+    padding:10px ;
+}
+.huddle{
+    width: 200px;
+    margin-bottom: 35px;
+}
+.img{
+    width: 550px;
+    height: auto;
+}
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        width: 550px;
+        margin-top: -30px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 25px;
+        color: white;
+        width: 310px;
+        margin-bottom: 15px; 
+    }
+    p{
+        width: 430px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+    }
+    button{
+        background-color: white;
+        width:150px ;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+    }
+    button:active{
+ background-color:  hsl(300, 69%, 71%);
+ color: white;
+    }
+    /* media query */
+    @media (max-width: 376px){
+        body{
+            background-image: url(./images/bg-mobile.svg);
+            max-width: 376px;
+             min-height:100vh;
+             flex-direction: column;
+             padding: 0;
+        }
+        .container{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content{
+            width: 100%;
+            flex-direction: column;
+        }
+        .logo{
+            width: 100%;
+        }
+        img{
+            width: 370px;
+            height: auto;
+        }
+    }
